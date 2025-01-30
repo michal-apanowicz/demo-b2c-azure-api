@@ -69,14 +69,14 @@ app.get(
   }
 );
 const port = process.env.PORT || 6000;
-const httpsPort = port + 1;
+// const httpsPort = port + 1;
 
 app.listen(port, () => {
   console.log("listening on port " + port);
 });
 
-var server = https.createServer(httpsOptions, app);
+// var server = https.createServer(httpsOptions, app);
 
-server.listen(httpsPort, () => {
-  console.log("https server starting on port : " + httpsPort);
-});
+// server.listen(httpsPort, () => {
+//   console.log("https server starting on port : " + httpsPort);
+// });
