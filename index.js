@@ -1,12 +1,12 @@
-// HTTPS setup
-const https = require("https");
-const fs = require("fs");
-const key = fs.readFileSync(__dirname + "/certs/selfsigned.key");
-const cert = fs.readFileSync(__dirname + "/certs/selfsigned.crt");
-const httpsOptions = {
-  key: key,
-  cert: cert,
-};
+// // Local HTTPS setup
+// const https = require("https");
+// const fs = require("fs");
+// const key = fs.readFileSync(__dirname + "/certs/selfsigned.key");
+// const cert = fs.readFileSync(__dirname + "/certs/selfsigned.crt");
+// const httpsOptions = {
+//   key: key,
+//   cert: cert,
+// };
 // Import the required libraries
 const express = require("express");
 const morgan = require("morgan");
